@@ -27,16 +27,46 @@
                <div class="col">
                    <div class="text-box">
                        <h5>Our Products</h5>
-                       <h1><b>Simplicity</b><br/> is the <br>Ultimate</br> sophistication</h1>
+                       <h1><b>Simplicity</b><br/> is the <br>Ultimate</br> <b>sophistication</b></h1>
                    </div>
+                   <img src="images/circle.png" alt="" class="small-icon1">
+                   <img src="images/circle.png" alt="" class="small-icon2">
+                   <img src="images/square.png" alt="" class="small-icon3">
+                   
                </div>
                <div class="col">
                    <div class="gallery-box">
-                       <img src="images/pic2.jpg" alt="gellerybox">
+                       <img src="images/pic2.jpg" alt="gallerybox" id="gallery">
+                       <ul>
+                            <li class="btn">01</li>
+                            <li class="btn active">02</li>
+                            <li class="btn">03</li>
+                            <li class="btn">04</li>
+                       </ul>
                    </div>
                </div>
            </div>
+                    <img src="images/circle.png" class="small-icon4">
+                    <img src="images/square.png" class="small-icon5">
        </div> 
-   
+     <script>
+        var btn = document.getElementbyClassName("btn");
+        var gallery = document.getElementById("gallery");
+        
+        var images = new Array(
+            "images/pic1.jpg",
+            "images/pic2.jpg",
+            "images/pic3.jpg",
+            "images/pic4.jpg"
+        );
+        
+        for(let i = 0; i < btn.length; i++){
+            btn[i].onclick = function(){
+                gallery.src = images[i];
+                let current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace("active", "");
+            }
+        }
+     </script>
     </body>
 </html>
