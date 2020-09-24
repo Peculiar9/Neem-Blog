@@ -50,6 +50,7 @@ nav ul li a:hover{
     width: 80%;
     min-height: 85vh;
     margin: auto;
+    display: flex;
     flex-wrap: wrap;
 }
 .col{
@@ -75,9 +76,9 @@ line-height: 65px;
 .gallery-box{
   max-width: 400px;
   position: relative;
-  margin:auto;  
+  margin: auto;  
 }
-gallery-box img{
+.gallery-box img{
  width: 100%;
  border: 10px solid rgba(255, 255, 255, 0.2);   
 }
