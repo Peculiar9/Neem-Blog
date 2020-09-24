@@ -72,5 +72,14 @@ font-weight: 100;
 letter-spacing: 3px;
 line-height: 65px;
 }
+.gallery-box{
+  max-width: 400px;
+  position: relative;
+  margin:auto;  
+}
+gallery-box img{
+ width: 100%;
+ border: 10px solid rgba(255, 255, 255, 0.2);   
+}
 
 
