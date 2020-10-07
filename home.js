@@ -15,3 +15,4 @@ for(let i = 0; i < btn.length; i++){
         current[0].className = current[0].className.replace("active", "");
     }
 }
+document.getElementById('product').textContent = "text;"

@@ -153,3 +153,34 @@ background-color: #e7c82f;
     bottom: 50px;
     opacity: 0.3;
 }
+
+@media(max-width:1000px){
+    header{
+        padding:20px 50px;
+    }
+}
+@media(max-width:700px){
+    .container{
+        flex-direction: column;
+    }
+     nav ul li{
+        margin:0 7px;
+    }
+    .container{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 110px 100px;
+    }
+    @media(max-width: 1000px){
+        .row{ padding: 125px 50px;
+            flex-direction: column; 
+        }
+    }
+    @media(max-width: 600px){
+        .row{ padding: 120px 30px;}
+    }

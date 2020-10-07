@@ -3,7 +3,6 @@
 <html lang="">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <title>Title Page</title>      
@@ -15,8 +14,8 @@
                <nav>
                    <ul>
                        <li><a href="#">Home</a></li>
-                       <li><a href="#">Office</a></li>
-                       <li><a href="#">Hotels</a></li>
+                       <li><a href="#">Categories</a></li>
+                       <li><a href="#">Recents</a></li>
                        <li><a href="#">Contact Us</a></li>
                    </ul>
                </nav>
@@ -26,7 +25,7 @@
            <div class="row">
                <div class="col">
                    <div class="text-box">
-                       <h5>Our Products</h5>
+                       <h5 id="product">Our Products</h5>
                        <h1><b>Simplicity</b><br/> is the <br>Ultimate</br> <b>sophistication</b></h1>
                    </div>
                    <img src="images/circle.png" alt="" class="small-icon1">
@@ -36,7 +35,7 @@
                </div>
                <div class="col">
                    <div class="gallery-box">
-                       <img src="images/pic2.jpg" alt="gallerybox" id="gallery">
+                       <img src="images/pic2.jpg" id="gallery">
                        <ul>
                             <li class="btn">01</li>
                             <li class="btn active">02</li>
@@ -46,27 +45,9 @@
                    </div>
                </div>
            </div>
-                    <img src="images/circle.png" class="small-icon4">
+                   <img src="images/circle.png" class="small-icon4">
                     <img src="images/square.png" class="small-icon5">
        </div> 
-     <script>
-        var btn = document.getElementbyClassName("btn");
-        var gallery = document.getElementById("gallery");
-        
-        var images = new Array(
-            "images/pic1.jpg",
-            "images/pic2.jpg",
-            "images/pic3.jpg",
-            "images/pic4.jpg"
-        );
-        
-        for(let i = 0; i < btn.length; i++){
-            btn[i].onclick = function(){
-                gallery.src = images[i];
-                let current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace("active", "");
-            }
-        }
-     </script>
+     <script src="home.js"></script>
     </body>
 </html>
