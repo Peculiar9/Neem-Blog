@@ -1,53 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <title>Title Page</title>      
-    </head>
-    <body>
-       <div class="container">
-           <div class="navbar">
-               <img src="images/logo.png" class="logo" alt="" srcset="">
-               <nav>
-                   <ul>
-                       <li><a href="#">Home</a></li>
-                       <li><a href="#">Categories</a></li>
-                       <li><a href="#">Recents</a></li>
-                       <li><a href="#">Contact Us</a></li>
-                   </ul>
-               </nav>
-               <img src="images/menu.png" alt="" class="menu-icon">
-           </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Queen Esther</title>
+  </head>
+  <body onload="startConfetti() ">
+    <div class="container">
+      <div class="navbar">
+        <!-- <img src="images/logo.png" class="logo" alt="" srcset="" /> -->
+        </nav>
+        <!-- <img src="images/menu.png" alt="" class="menu-icon" /> -->
+      </div>
 
-           <div class="row">
-               <div class="col">
-                   <div class="text-box">
-                       <h5 id="product">Our Products</h5>
-                       <h1><b>Simplicity</b><br/> is the <br>Ultimate</br> <b>sophistication</b></h1>
-                   </div>
-                   <img src="images/circle.png" alt="" class="small-icon1">
-                   <img src="images/circle.png" alt="" class="small-icon2">
-                   <img src="images/square.png" alt="" class="small-icon3">
-                   
-               </div>
-               <div class="col">
-                   <div class="gallery-box">
-                       <img src="images/pic2.jpg" id="gallery">
-                       <ul>
-                            <li class="btn">01</li>
-                            <li class="btn active">02</li>
-                            <li class="btn">03</li>
-                            <li class="btn">04</li>
-                       </ul>
-                   </div>
-               </div>
-           </div>
-                   <img src="images/circle.png" class="small-icon4">
-                    <img src="images/square.png" class="small-icon5">
-       </div> 
-     <script src="home.js"></script>
-    </body>
+      <div class="row">
+        <div class="col">
+          <div class="text-box">
+            <h5 id="product">Special Mention</h5>
+            <h1>
+              <b>Esther</b><br />
+              is an <br />Ultimate <br />
+              <b><i class="fas fa-crown"></i><h4>Queen</h4></b>
+            </h1>
+          </div>
+          <img src="images/circle.png" alt="" class="small-icon1" />
+          <img src="images/circle.png" alt="" class="small-icon2" />
+          <img src="images/square.png" alt="" class="small-icon3" />
+        </div>
+        <div class="col">
+          <div class="gallery-box">
+            <img src="images/Esther1.jpeg" id="gallery" />
+            <ul>
+              <li class="btnx" onclick="startConfetti();">01</li>
+              <li class="btn active">02</li>
+              <li class="btn">03</li>
+              <li class="btn">04</li>
+            </ul>
+          </div>
+        </div>
+        <h2>Happy Birthday Esther</h2>
+      </div>
+      <img src="images/circle.png" class="small-icon4" />
+      <img src="images/square.png" class="small-icon5" />
+    </div>
+    <script src="home.js"></script>
+    <script src="confetti.min.js"></script>
+  </body>
 </html>
